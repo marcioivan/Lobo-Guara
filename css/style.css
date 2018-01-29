@@ -1,0 +1,144 @@
+html {
+  background-image: url("img/wallpaper.jpg");
+  height:100%;
+  overflow: hidden;
+}
+
+#lobo {
+  max-width: 1120px;
+  height: 750px;
+  margin: 145px auto;
+  background-image: url("img/lobo.jpg");
+  background-repeat: no-repeat;
+  background-position:  top center;
+  background-size: cover;
+  border:solid 8px;
+  border-bottom-color:#ffe;
+  border-left-color:#eed;
+  border-right-color:#eed;
+  border-top-color:#ccb;
+}
+
+#lobo.latido {
+  max-width: 1120px;
+  height: 700px;
+  margin: 145px auto;
+  background-image: url("img/loboativo.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  animation: shake 0.1s infinite;
+}
+
+#lobo.incomodado {
+  max-width: 1120px;
+  height: 750px;
+  margin: 145px auto;
+  background-image: url("img/loboincomodado.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+#lobo.pata {
+  max-width: 1050px;
+  height: 380px;
+  margin: 145px auto;
+	background-image: url("img/lobopata.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#lobo.cabeca {
+  max-width: 900px;
+  height: 600px;
+  margin: 145px auto;
+	background-image: url("img/lobocabeca.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#lobo.corpo {
+  max-width: 1100px;
+  height: 550px;
+  margin: 145px auto;
+	background-image: url("img/lobocorpo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#lobo.rabo {
+  max-width: 460px;
+  height: 600px;
+  margin: 145px auto;
+	background-image: url("img/loborabo.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+@keyframes shake {
+  10%, 90% { transform: translate3d(-5px, 5px, 0); }
+  20%, 80% { transform: translate3d(10px, -10px, 0); }
+  30%, 50%, 70% { transform: translate3d(-20px, 20px, 0); }
+  40%, 60% { transform: translate3d(20px, -20px, 0); }
+}
+
+#painel-principal {
+  width: 98%;
+  position: absolute;
+  top: 2%;
+}
+
+#painel-botoes-1 {
+  text-align: center;
+}
+
+#painel-botoes-2 {
+  text-align: center;
+  margin-top: 7px;
+}
+
+#painel-botoes-3 {
+  text-align: left;
+}
+
+.subtext {
+  text-align: center;
+  margin: -100px auto;
+  width: 1000px;
+  border-radius:6px;
+  font-size: 200%;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+  background-color: #ffe;
+}
+
+button {
+  display: inline-block;
+	background-color:#fff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	color:#0d0d0d;
+	font-family:Arial;
+	font-size:17px;
+	padding:6px 15px;
+}
+
+button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+	background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+	background-color:#f6f6f6;
+}
+
+button:active {
+	position:relative;
+	top:1px;
+}

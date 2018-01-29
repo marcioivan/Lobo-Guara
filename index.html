@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lobo_Guara</title>
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <div id="painel-principal">
+
+          <div class="btn-group" role="group" id="painel-botoes-3">
+              <button type="button" class="btn btn-default" id="btn-modoadulto" onmousedown="sendFeed('modo', '1')">Modo Adulto</button>
+              <button type="button" class="btn btn-default" id="btn-modocrianca" onmousedown="sendFeed('modo', '0')">Modo Criança</button>
+          </div>
+
+          <div class="btn-group" role="group" id="painel-botoes-1">
+              <button type="button" class="btn btn-default" id="btn-proximity" onmousedown="sendFeed('proximity', '1')" onmouseup="sendFeed('proximity', '0')">Proximity</button>
+              <button type="button" class="btn btn-default" id="btn-latido" onmousedown="sendFeed('latido', '1')" onmouseup="sendFeed('latido', '0')">Latido</button>
+          </div>
+
+          <div class="btn-group" role="group" id="painel-botoes-2">
+              <button type="button" class="btn btn-default" id="btn-cabeca" onmousedown="sendFeed('cabeca', '1')" onmouseup="sendFeed('cabeca', '0')">Cabeça</button>
+              <button type="button" class="btn btn-default" id="btn-corpo" onmousedown="sendFeed('corpo', '1')" onmouseup="sendFeed('corpo', '0')">Corpo</button>
+              <button type="button" class="btn btn-default" id="btn-pata" onmousedown="sendFeed('pata', '1')" onmouseup="sendFeed('pata', '0')">Pata</button>
+              <button type="button" class="btn btn-default" id="btn-rabo" onmousedown="sendFeed('rabo', '1')" onmouseup="sendFeed('rabo', '0')">Rabo</button>
+          </div>
+
+        </div>
+
+    </head>
+
+    <body>
+
+        <div id="lobo"></div>
+
+        <div class="subtext"></div>
+
+        <script src="js/mqtt.min.js"></script>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
